@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxGP.AloitusGUIController">
+   <children>
+      <HBox minHeight="300.0" minWidth="400.0">
+         <children>
+            <SplitPane dividerPositions="0.5" minWidth="400.0" orientation="VERTICAL">
+              <items>
+                <AnchorPane minHeight="220.0" minWidth="0.0">
+                     <children>
+                        <SplitPane minWidth="400.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                          <items>
+                            <AnchorPane minHeight="195.0" minWidth="0.0">
+                                 <children>
+                                    <Label layoutX="42.0" layoutY="46.0" prefHeight="52.0" prefWidth="315.0" text="Tervetuloa taitoluistelun yksinluistelun GP -kilpailuiden tulosseurantaohjelmaan. Kirjoita vuosi:" textAlignment="CENTER" wrapText="true" />
+                                    <TextArea fx:id="aloitusVuosi" layoutX="99.0" layoutY="107.0" prefHeight="25.0" prefWidth="200.0" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <Button layoutX="122.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleSelva" prefHeight="27.0" prefWidth="61.0" text="Selvä" />
+                        <Button layoutX="216.0" layoutY="22.0" mnemonicParsing="false" onAction="#handlePeruuta" prefHeight="27.0" prefWidth="61.0" text="Peruuta" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
